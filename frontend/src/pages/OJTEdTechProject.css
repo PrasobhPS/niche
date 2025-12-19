@@ -1,0 +1,108 @@
+.edtech-header {
+    background-color: #1E293B;
+}
+
+.highlight-orange {
+    color: #F97316;
+}
+
+.selection-notice {
+    background-color: #FFF7ED;
+    padding: 2rem 0;
+    border-bottom: 1px solid #FFEDD5;
+}
+
+.notice-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color: #C2410C;
+    font-weight: 500;
+    text-align: center;
+}
+
+.difference-section {
+    padding: 5rem 0;
+    background-color: var(--white);
+    text-align: center;
+}
+
+.difference-section h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.section-desc {
+    color: var(--text-light);
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+}
+
+.difference-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.diff-card {
+    padding: 2rem;
+    background: #F8FAFC;
+    border-radius: 12px;
+    border: 1px solid #E2E8F0;
+    transition: all 0.3s ease;
+}
+
+.diff-card:hover {
+    border-color: var(--secondary-color);
+    transform: translateY(-5px);
+}
+
+.diff-icon {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.diff-card h3 {
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+}
+
+.performance-terms {
+    padding: 5rem 0;
+    background-color: #F1F5F9;
+    text-align: center;
+}
+
+.performance-terms h2 {
+    margin-bottom: 3rem;
+    color: var(--primary-color);
+}
+
+.terms-list {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+}
+
+.term-item {
+    flex: 1;
+    min-width: 250px;
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.term-item h3 {
+    color: #B91C1C;
+    margin-bottom: 0.5rem;
+}
+
+.warning-text {
+    margin-bottom: 3rem;
+    color: var(--text-dark);
+    font-size: 1.1rem;
+}

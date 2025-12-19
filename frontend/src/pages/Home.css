@@ -1,0 +1,512 @@
+/* Home Page Styles - Dark/Yellow Theme */
+
+/* Hero Section */
+.hero-section {
+    padding: 8rem 0 10rem;
+    background-color: var(--primary-dark);
+    background-image: linear-gradient(rgba(11, 17, 32, 0.8), rgba(11, 17, 32, 0.9)), url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');
+    background-size: cover;
+    background-position: center;
+    color: var(--text-white);
+    position: relative;
+}
+
+.hero-title {
+    font-size: 4.5rem;
+    line-height: 1.1;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    color: var(--text-white);
+}
+
+.italic-text {
+    font-style: italic;
+    font-weight: 300;
+    font-family: serif;
+    /* Using serif to contrast as per design */
+    opacity: 0.9;
+}
+
+.hero-description {
+    font-size: 1.125rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 2.5rem;
+    max-width: 500px;
+}
+
+/* Stats Section */
+.stats-section {
+    background-color: var(--text-white);
+    padding: 3rem 0;
+    border-bottom: 1px solid #E5E7EB;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stat-item {
+    text-align: left;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 300;
+    /* Thinner font for numbers as per new design */
+    color: var(--text-main);
+    line-height: 1;
+    margin-bottom: 0.25rem;
+}
+
+.stat-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--text-light);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+/* Services Section */
+.services-section {
+    padding: 6rem 0;
+    background-color: #FAFAFA;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: var(--text-main);
+    line-height: 1.2;
+}
+
+.underline-text {
+    border-bottom: 3px solid var(--text-main);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+.service-card {
+    background: var(--text-white);
+    padding: 2rem;
+    border-radius: 4px;
+    /* Sharper corners as per design */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+    transition: transform 0.3s ease;
+    border: 1px solid #F3F4F6;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+}
+
+.service-icon {
+    margin-bottom: 1.5rem;
+}
+
+.service-card h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.service-card p {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.learn-more {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-main);
+    letter-spacing: 1px;
+}
+
+/* Partners Section */
+.partners-section {
+    padding: 6rem 0;
+    background-color: var(--text-white);
+}
+
+.partners-subtitle {
+    font-family: serif;
+    font-style: italic;
+    color: var(--text-light);
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.partners-title {
+    margin-bottom: 3rem;
+}
+
+.partners-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.partner-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: #9CA3AF;
+    font-size: 1.1rem;
+    padding: 1rem;
+    border: 1px solid #F3F4F6;
+    border-radius: 4px;
+}
+
+.btn-outline-dark {
+    background: transparent;
+    border: 1px solid #E5E7EB;
+    padding: 0.75rem 2rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-outline-dark:hover {
+    border-color: var(--text-main);
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    padding: 6rem 0;
+    background-color: #FAFAFA;
+}
+
+.section-eyebrow {
+    font-size: 1rem;
+    color: var(--text-light);
+    margin-bottom: 0.5rem;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 300px 300px;
+    gap: 1.5rem;
+}
+
+/* Specific Card Styles */
+.testi-card {
+    background: var(--text-white);
+    padding: 1.5rem;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+}
+
+.rating-card {
+    background-color: #6D28D9;
+    /* Purple */
+    color: var(--text-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating-score {
+    font-size: 4rem;
+    line-height: 1;
+    color: var(--text-white);
+    margin-bottom: 0.5rem;
+}
+
+.rating-label {
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.portrait-card {
+    padding: 0;
+    grid-column: span 1;
+    /* Default span */
+}
+
+.portrait-1 {
+    grid-column: span 2;
+    /* Vanessa is wider? No, looks like layout in image is unique. Making it simple grid for now. */
+    grid-column: 2 / 4;
+    /* Center large item */
+    grid-row: 1 / 3;
+    /* Tall item */
+}
+
+.portrait-2 {
+    /* Lana */
+    grid-column: 2 / 3;
+}
+
+.clients-card {
+    background-color: #EC4899;
+    /* Pink */
+    color: var(--text-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.testi-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.testi-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    color: var(--text-white);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.quote-only-card {
+    background-color: var(--text-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.quote-icon {
+    font-size: 3rem;
+    color: #93C5FD;
+    /* Light blue quote mark */
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+
+/* Grid Layout overrides to match image roughly */
+/* 
+Row 1: Rating (1col), Review (1col), Vanessa (2cols wide?) -> Let's try a different grid approach.
+The image has Rating(Purple) at left. Large Portrait (Vanessa) center. Text review right.
+Then bottom row: Quote(blue icon) left. Portrait (Lana) center. Happy Clients(Pink) right.
+*/
+
+.testimonials-grid {
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 350px 350px;
+    gap: 1.5rem;
+}
+
+/* Row 1 */
+.rating-card {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.portrait-1 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+/* Vanessa */
+.text-card {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Row 2 */
+.quote-only-card {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.portrait-2 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+/* Lana */
+.clients-card {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+
+/* CTA Form Section */
+.cta-form-section {
+    background-color: var(--primary-yellow);
+    padding: 5rem 0;
+    color: var(--primary-dark);
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cta-heading {
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.cta-subheading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.contact-info p {
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.cta-right {
+    background: transparent;
+    flex-basis: 50%;
+}
+
+.quick-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-row {
+    display: flex;
+    gap: 1rem;
+}
+
+.form-input {
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 4px;
+    width: 100%;
+    font-size: 0.9rem;
+    outline: none;
+}
+
+.form-input::placeholder {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.submit-btn {
+    background: var(--text-white);
+    color: var(--primary-dark);
+    font-weight: 900;
+    padding: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: transform 0.2s;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .testimonials-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    .portrait-1 {
+        grid-column: 1 / 3;
+        grid-row: 2;
+        height: 300px;
+    }
+
+    .rating-card {
+        grid-column: 1 / 2;
+        grid-row: 1;
+    }
+
+    .text-card {
+        grid-column: 2 / 3;
+        grid-row: 1;
+    }
+
+    .quote-only-card {
+        grid-column: 1 / 2;
+        grid-row: 3;
+    }
+
+    .clients-card {
+        grid-column: 2 / 3;
+        grid-row: 3;
+    }
+
+    .portrait-2 {
+        grid-column: 1 / 3;
+        grid-row: 4;
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .hero-container {
+        grid-template-columns: 1fr;
+    }
+
+    .stats-container {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .partners-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .form-container {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .cta-right {
+        width: 100%;
+    }
+}
