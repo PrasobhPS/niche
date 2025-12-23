@@ -1,73 +1,81 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { Mail, Send, Linkedin, HelpCircle } from 'lucide-react';
 import './Contact.css';
 
 const Contact = () => {
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        phone: '',
-        goal: 'USA'
-    });
-
-    const handleChange = (e) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
-    };
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        alert('Thank you! We will evaluate your profile and get back to you.');
-        // In a real app, send to backend
-    };
-
     return (
         <div className="contact-page">
-            <header className="page-header contact-header">
+            <section className="contact-hero section-padding text-center">
                 <div className="container">
-                    <h1 className="page-title">Let’s Evaluate Your Profile</h1>
-                    <p className="page-subtitle">Not sure which path fits you? Get a free initial profile evaluation.</p>
+                    <h1 className="hero-title animate-fade-in">Let’s Evaluate <span className="text-highlight">Your Profile</span></h1>
+                    <p className="hero-subtitle animate-fade-in">
+                        Not sure which path fits you? We offer a free initial profile evaluation to help you decide.
+                    </p>
                 </div>
-            </header>
+            </section>
 
-            <section className="contact-content">
-                <div className="container contact-grid">
-                    <div className="contact-info">
-                        <h2>Who Should Contact Us</h2>
-                        <ul>
-                            <li>Anyone planning to move to the USA</li>
-                            <li>Freshers struggling to get hired</li>
-                            <li>Professionals stuck due to visa or experience gaps</li>
-                            <li>Career switchers looking for structured growth</li>
-                        </ul>
-                        <div className="email-box">
-                            <p>Email: <strong>info@nichetechcareer.com</strong></p>
+            <section className="section-padding pt-0">
+                <div className="container">
+                    <div className="contact-grid">
+                        {/* Info Column */}
+                        <div className="contact-info">
+                            <div className="glass-panel p-4 mb-4">
+                                <h3>Who Should Contact Us</h3>
+                                <ul className="check-list mt-3">
+                                    <li>Anyone planning to move to the USA</li>
+                                    <li>Freshers struggling to get hired</li>
+                                    <li>Professionals stuck due to visa/experience gaps</li>
+                                    <li>Career switchers looking for structured growth</li>
+                                </ul>
+                            </div>
+
+                            <div className="glass-panel p-4">
+                                <h3>What to Share</h3>
+                                <ul className="dot-list mt-3">
+                                    <li>Resume or LinkedIn profile</li>
+                                    <li>Education details</li>
+                                    <li>Work experience (if any)</li>
+                                    <li>Career goal (India / USA / both)</li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
 
-                    <div className="contact-form-wrapper">
-                        <form className="contact-form" onSubmit={handleSubmit}>
-                            <h3>Get Free Profile Evaluation</h3>
-                            <div className="form-group">
-                                <label>Name</label>
-                                <input type="text" name="name" required onChange={handleChange} />
+                        {/* Form Column */}
+                        <div className="contact-form-wrapper glass-panel p-5">
+                            <h2 className="mb-4">Get Free Profile Evaluation</h2>
+                            <form className="contact-form" onSubmit={(e) => e.preventDefault()}>
+                                <div className="form-group">
+                                    <label>Full Name</label>
+                                    <input type="text" placeholder="John Doe" className="form-input" />
+                                </div>
+                                <div className="form-group">
+                                    <label>Email Address</label>
+                                    <input type="email" placeholder="john@example.com" className="form-input" />
+                                </div>
+                                <div className="form-group">
+                                    <label>Current Status</label>
+                                    <select className="form-input">
+                                        <option>Student / Fresher</option>
+                                        <option>Working Professional</option>
+                                        <option>Career Switcher</option>
+                                    </select>
+                                </div>
+                                <div className="form-group">
+                                    <label>Message / Query</label>
+                                    <textarea rows="4" placeholder="Tell us about your goals..." className="form-input"></textarea>
+                                </div>
+                                <button type="submit" className="btn btn-gradient w-100">
+                                    Submit Request <Send size={18} style={{ marginLeft: '8px' }} />
+                                </button>
+                            </form>
+
+                            <div className="email-direct mt-4 text-center">
+                                <p className="text-muted mb-2">Or email us directly at:</p>
+                                <a href="mailto:info@nichetechcareer.com" className="email-link">
+                                    <Mail size={18} /> info@nichetechcareer.com
+                                </a>
                             </div>
-                            <div className="form-group">
-                                <label>Email</label>
-                                <input type="email" name="email" required onChange={handleChange} />
-                            </div>
-                            <div className="form-group">
-                                <label>Phone</label>
-                                <input type="tel" name="phone" onChange={handleChange} />
-                            </div>
-                            <div className="form-group">
-                                <label>Career Goal</label>
-                                <select name="goal" onChange={handleChange}>
-                                    <option value="USA">Move to USA</option>
-                                    <option value="OJT">OJT Program (India)</option>
-                                    <option value="BOTH">Both / Unsure</option>
-                                </select>
-                            </div>
-                            <button type="submit" className="btn btn-primary submit-btn">Submit for Evaluation</button>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </section>

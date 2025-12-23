@@ -1,85 +1,92 @@
-.contact-header {
-    background-color: var(--primary-color);
-}
-
-.contact-content {
-    padding: 5rem 0;
-    background-color: var(--background-light);
+.contact-hero {
+    background: radial-gradient(circle at bottom, rgba(250, 204, 21, 0.1), transparent 50%);
 }
 
 .contact-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 40px;
 }
 
-.contact-info ul {
-    list-style: disc;
-    padding-left: 1.5rem;
-    margin-bottom: 3rem;
-    margin-top: 1.5rem;
+.check-list,
+.dot-list {
+    list-style: none;
+    padding: 0;
 }
 
-.contact-info li {
-    margin-bottom: 1rem;
-    font-size: 1.1rem;
-    color: var(--text-dark);
+.check-list li {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
 }
 
-.email-box {
-    font-size: 1.25rem;
-    color: var(--primary-color);
+.check-list li::before {
+    content: '✓';
+    color: var(--color-primary);
+    margin-right: 10px;
+    font-weight: bold;
 }
 
-.contact-form-wrapper {
-    background: var(--white);
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+.dot-list li {
+    margin-bottom: 12px;
+    padding-left: 20px;
+    position: relative;
 }
 
-.contact-form h3 {
-    margin-bottom: 1.5rem;
-    color: var(--primary-color);
+.dot-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 6px;
+    height: 6px;
+    background: var(--color-secondary);
+    border-radius: 50%;
 }
 
 .form-group {
-    margin-bottom: 1.5rem;
+    margin-bottom: 20px;
 }
 
 .form-group label {
     display: block;
-    margin-bottom: 0.5rem;
-    font-weight: 500;
-    color: var(--text-dark);
+    margin-bottom: 8px;
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
 }
 
-.form-group input,
-.form-group select {
+.form-input {
     width: 100%;
-    padding: 0.75rem;
-    border: 1px solid #E2E8F0;
-    border-radius: 6px;
-    font-family: inherit;
-    font-size: 1rem;
-    transition: border-color 0.3s;
+    padding: 12px 15px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    color: white;
+    font-family: var(--font-main);
+    transition: all 0.3s;
 }
 
-.form-group input:focus,
-.form-group select:focus {
+.form-input:focus {
     outline: none;
-    border-color: var(--secondary-color);
-    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+    border-color: var(--color-secondary);
+    background: rgba(255, 255, 255, 0.1);
 }
 
-.submit-btn {
-    width: 100%;
+.email-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--color-primary);
+    font-weight: 500;
     font-size: 1.1rem;
+}
+
+.email-link:hover {
+    text-decoration: underline;
 }
 
 @media (max-width: 768px) {
     .contact-grid {
         grid-template-columns: 1fr;
-        gap: 2rem;
     }
 }

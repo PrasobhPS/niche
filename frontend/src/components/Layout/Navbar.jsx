@@ -21,25 +21,19 @@ const Navbar = () => {
     return (
         <nav className="navbar">
             <div className="container navbar-container">
-                <Link to="/" className="navbar-logo">
+                <Link to="/" className="navbar-logo" style={{ color: '#000', textDecoration: 'none' }}>
                     <div className="logo-icon"><Sparkles size={20} color="#000" /></div>
                     Niche Tech Career
                 </Link>
 
                 {/* Desktop Menu */}
                 <ul className="navbar-menu desktop-only">
-                    {navLinks.map((link) => (
-                        <li key={link.path}>
-                            <Link
-                                to={link.path}
-                                className={`nav-link ${location.pathname === link.path ? 'active' : ''}`}
-                            >
-                                {link.label}
-                            </Link>
-                        </li>
-                    ))}
+                    <li><Link to="/" className="nav-link active">Home</Link></li>
+                    <li><Link to="/ui-programs" className="nav-link">Programs</Link></li>
+                    <li><Link to="/why-choose-us" className="nav-link">Why Choose Us</Link></li>
+                    <li><Link to="/contact" className="nav-link">Contact</Link></li>
                     <li>
-                        <Link to="/contact" className="btn btn-primary">Get Started</Link>
+                        <Link to="/start" className="btn-gradient-pill">TO START</Link>
                     </li>
                 </ul>
 

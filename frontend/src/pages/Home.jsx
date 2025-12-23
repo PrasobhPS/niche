@@ -1,221 +1,99 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Star, Play, Plane, GraduationCap, Briefcase, Users, Phone, Mail } from 'lucide-react';
-import './Home.css';
 
 const Home = () => {
     return (
-        <div className="home">
-            {/* Hero Section */}
-            <section className="hero-section">
-                <div className="container hero-container">
-                    <div className="hero-content">
-                        <h1 className="hero-title">
-                            Building <span className="italic-text">Careers,</span><br />
-                            Breaking <span className="italic-text">Barriers</span>
-                        </h1>
-                        <p className="hero-description">
-                            Connecting underrepresented professionals with global opportunities.
-                            Insights, and networks needed to build thriving tech careers.
-                        </p>
-
-                        <div className="hero-buttons">
-                            <Link to="/success-stories" className="btn btn-dark">
-                                VIEW SUCCESS STORIES <ArrowRight size={16} style={{ marginLeft: '8px' }} />
-                            </Link>
+        <div className="flex flex-col">
+            <section className="relative bg-brand-dark min-h-screen pt-32 pb-20 overflow-hidden flex flex-col">
+                <div className="absolute top-0 left-0 w-full h-full bg-hero-glow pointer-events-none"></div>
+                <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-purple-900/20 blur-[100px] rounded-full pointer-events-none"></div>
+                <div className="container mx-auto px-6 relative z-10 flex-grow flex flex-col">
+                    <div className="flex flex-col lg:flex-row justify-between items-start pt-10 mb-20">
+                        <div className="max-w-3xl">
+                            <h1 className="font-heading text-5xl md:text-7xl font-light text-white leading-tight mb-2">
+                                Build Your <span className="font-normal italic border-b border-white pb-2 inline-block">Career</span> Globally,
+                            </h1>
+                            <h1 className="font-heading text-6xl md:text-8xl font-bold text-white mb-12">
+                                Start Right
+                            </h1>
+                            <div className="flex flex-wrap gap-4 mt-8">
+                                <Link to="/usa-pathways" className="gradient-border-btn text-white px-8 py-3 text-sm rounded font-medium hover:bg-white/5 transition-colors">
+                                    Move to the USA
+                                </Link>
+                                <Link to="/ojt" className="border border-purple-500/50 text-white px-8 py-3 text-sm rounded font-medium hover:border-purple-500 transition-colors">
+                                    Start Your Career
+                                </Link>
+                            </div>
+                        </div>
+                        <div className="max-w-md mt-10 lg:mt-0 lg:pl-10">
+                            <p className="text-gray-400 text-sm leading-relaxed mb-8">
+                                Niche Tech Career helps individuals build real careers, either by moving to the USA legally or by starting strong through a performance-based On-Job Trainee (OJT) program.
+                            </p>
+                            <div className="flex items-center gap-4">
+                                <div className="flex -space-x-3">
+                                    <img alt="User" className="w-10 h-10 rounded-full border-2 border-brand-dark object-cover grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBL3zA9QDWHdXb6-1Yl-Tbu2EHzQ6kjkrB-A1YN2nCI86JIvll0mza3u3PGvRbhXFZ3xj9WS93RHdMAtYpEu-iwvfEKPjoFM3HJnwKSR8sqrDYsRndSW3m9UZZ96HlZWfswOQ3voXFB72i3gOXovv_WPp6diMyH1Sj8DCM8r0i-uscG7YLMa_iW5HRqAWlFhjUCd6cJMIxbklUB1rGsAV6YzaFEtqYpj2Ws6szyaNshSGWHdquLUYL_oJ8hqFregsTQexs1Pk6Umw" />
+                                    <img alt="User" className="w-10 h-10 rounded-full border-2 border-brand-dark object-cover grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBn0LQ2dh_Wvago-Xf4HatRFC8pQUiqSDZDOEAyDMS2rWuF1nWRzX37R2ptZbe46TSPdiF4u5Iv3HUNWbu7sHyKHHkxqs_xKTDUABs9DLTzAOVDj_cTb8yXp35O4MMAh1p-3s7ROsxyB5HzYW_yEkQg0QI9CZK7-nknjJZ7NMHM-sOEDr-Ls7MoiSpt4R7wudsJZyo64qc26ZO8jFE39beZKGD7YoOO0rU2f6-z85SUcZhrzGKv2cXBTPSjWguG9kCGr869fLEWDw" />
+                                    <img alt="User" className="w-10 h-10 rounded-full border-2 border-brand-dark object-cover grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOU1v2-X4X9icN_RWyXCbuk66NcV0zXJGALrDF1YsSTueT9L6BInUbDRQ0aSv1YMLwcIsVxBvynKfbsqfZON7asKTU-PCfry5vq0C18qJNJ5GFTHYfvvYtiL27L1na7O_oN--jkyrphs4ngsPVsGL0--W_e7lfpnTcaacOj0cxWyXFM-bEKyKXjAYVq7m63DRtuYMQcwdt37QaI0AEIvF0F0YvwC-hJjUcsJ1vsfmaFOKsDcjng_h7MP5U4dk4I9MYogjNdul-6w" />
+                                </div>
+                                <div>
+                                    <span className="block text-white font-bold text-lg leading-none">90%</span>
+                                    <span className="text-gray-500 text-xs uppercase tracking-wider">Success Rate</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                {/* Background Overlay Gradient is handled in CSS */}
-            </section>
-
-            {/* Stats Section */}
-            <section className="stats-section">
-                <div className="container stats-container">
-                    <div className="stat-item">
-                        <h3 className="stat-number">130+</h3>
-                        <p className="stat-label">TOP EXPERTS</p>
-                    </div>
-                    <div className="stat-item">
-                        <h3 className="stat-number">1500+</h3>
-                        <p className="stat-label">HAPPY CLIENTS</p>
-                    </div>
-                    <div className="stat-item">
-                        <h3 className="stat-number">2150+</h3>
-                        <p className="stat-label">SUCCESSFUL PROJECTS</p>
-                    </div>
-                    <div className="stat-item">
-                        <h3 className="stat-number">16+</h3>
-                        <p className="stat-label">COUNTRIES</p>
+                    <div className="relative w-full mt-auto">
+                        <img
+                            src="/hero-mask-group.png"
+                            alt="Professionals"
+                            className="w-full h-auto object-contain"
+                        />
                     </div>
                 </div>
             </section>
 
-            {/* Services Section */}
-            <section className="services-section">
-                <div className="container">
-                    <div className="section-header">
-                        <h2 className="section-title">
-                            World Class Services For<br />
-                            Crafting Your <span className="underline-text">Global Success</span>
+            <section className="py-20 bg-white overflow-hidden">
+                <div className="container mx-auto px-6 text-center">
+                    <h2 className="font-heading text-6xl md:text-8xl lg:text-9xl font-thin tracking-tight uppercase">
+                        <span className="text-brand-dark">START</span> <span className="font-normal">YOUR</span> <span className="text-outline font-light">CAREER</span>
+                    </h2>
+                </div>
+            </section>
+
+            <section className="py-16 bg-white">
+                <div className="container mx-auto px-6">
+                    <div className="text-center mb-20 max-w-2xl mx-auto">
+                        <h2 className="text-4xl md:text-5xl font-heading font-light mb-6 text-brand-dark">
+                            Why Niche <span className="font-bold">Tech Career</span>
                         </h2>
+                        <p className="text-gray-500 text-sm leading-relaxed">
+                            We don't sell dreams.<br />
+                            We evaluate profiles, explain realistic options, and guide candidates through<br className="hidden md:block" />
+                            structured, legal, and outcome-driven pathways.
+                        </p>
                     </div>
-
-                    <div className="services-grid">
-                        <div className="service-card">
-                            <div className="service-icon"><Plane size={32} color="#6D28D9" /></div>
-                            <h3>USA Pathways</h3>
-                            <p>Comprehensive visa strategies for H1B, L1, and O1 applicants. Designed for ambitious tech talent.</p>
-                            <Link to="/usa-pathways" className="learn-more">ViEW MORE <ArrowRight size={14} /></Link>
-                        </div>
-                        <div className="service-card">
-                            <div className="service-icon"><GraduationCap size={32} color="#6D28D9" /></div>
-                            <h3>OJT Program</h3>
-                            <p>Intensive on-the-job training modules that bridge the gap between academic theory and practice.</p>
-                            <Link to="/ojt-program" className="learn-more">ViEW MORE <ArrowRight size={14} /></Link>
-                        </div>
-                        <div className="service-card">
-                            <div className="service-icon"><Briefcase size={32} color="#EC4899" /></div>
-                            <h3>Job Placement</h3>
-                            <p>Direct connections to our network of 500+ tech partners actively hiring skilled professionals.</p>
-                            <Link to="/contact" className="learn-more">ViEW MORE <ArrowRight size={14} /></Link>
-                        </div>
-                        <div className="service-card">
-                            <div className="service-icon"><Users size={32} color="#FFD700" /></div>
-                            <h3>Community Access</h3>
-                            <p>Join an exclusive network of peers and mentors for guidance, networking, and career support.</p>
-                            <Link to="/community" className="learn-more">ViEW MORE <ArrowRight size={14} /></Link>
-                        </div>
+                    <div className="max-w-5xl mx-auto">
+                        <img
+                            src="/services-cards.png"
+                            alt="Why Niche Tech Career – Services Overview"
+                            className="w-full h-auto object-contain"
+                        />
+                    </div>
+                    <div className="text-center mt-20 pb-10">
+                        <Link to="/contact" className="border border-purple-500 text-brand-dark px-8 py-3 rounded text-sm font-medium hover:bg-purple-50 transition-colors uppercase tracking-widest">
+                            Get a Free Profile Evaluation
+                        </Link>
                     </div>
                 </div>
             </section>
 
-            {/* Partners Section */}
-            <section className="partners-section">
-                <div className="container text-center">
-                    <p className="partners-subtitle">Happy Clients</p>
-                    <h2 className="partners-title">Our Network of Trusted Brands</h2>
-
-                    <div className="partners-grid">
-                        <div className="partner-logo">InterStellar</div>
-                        <div className="partner-logo">TechCannon</div>
-                        <div className="partner-logo">DATAFLOW</div>
-                        <div className="partner-logo">NextGen</div>
-                        <div className="partner-logo">CloudSys</div>
-                        <div className="partner-logo">BlockChain</div>
-                        <div className="partner-logo">CODEC</div>
-                        <div className="partner-logo">Nexus</div>
-                        <div className="partner-logo">Velvet</div>
-                        <div className="partner-logo">LaunchPad</div>
-                    </div>
-
-                    <div className="partners-action">
-                        <button className="btn-outline-dark">SEE ALL CLIENTS</button>
-                    </div>
-                </div>
-            </section>
-
-            {/* Testimonials Section */}
-            <section className="testimonials-section">
-                <div className="container">
-                    <div className="section-header text-center">
-                        <p className="section-eyebrow">Voices of Success:</p>
-                        <h2 className="section-title">Tales from Our Esteemed Clientele</h2>
-                        <p className="section-subtext">Excellent career guidance is our foundation.</p>
-                    </div>
-
-                    <div className="testimonials-grid">
-                        {/* 1. Rating Card */}
-                        <div className="testi-card rating-card">
-                            <h3 className="rating-score">4.9</h3>
-                            <p className="rating-label">Avg. Review</p>
-                            <div className="stars">
-                                <Star size={16} fill="#FFD700" stroke="none" />
-                                <Star size={16} fill="#FFD700" stroke="none" />
-                                <Star size={16} fill="#FFD700" stroke="none" />
-                                <Star size={16} fill="#FFD700" stroke="none" />
-                                <Star size={16} fill="#FFD700" stroke="none" />
-                            </div>
-                        </div>
-
-                        {/* 2. Portrait Card (Vanessa) */}
-                        <div className="testi-card portrait-card portrait-1">
-                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Vanessa" className="testi-img" />
-                            <div className="testi-overlay">
-                                <div className="testi-info">
-                                    <h4>Vanessa Moore</h4>
-                                    <p>PRODUCT MANAGER @ VENUS</p>
-                                </div>
-                                <button className="play-btn"><Play size={16} fill="#FFF" /></button>
-                            </div>
-                        </div>
-
-                        {/* 3. Text Card */}
-                        <div className="testi-card text-card">
-                            <div className="stars">
-                                <Star size={14} fill="#FFD700" stroke="none" />
-                                <Star size={14} fill="#FFD700" stroke="none" />
-                                <Star size={14} fill="#FFD700" stroke="none" />
-                                <Star size={14} fill="#FFD700" stroke="none" />
-                                <Star size={14} fill="#FFD700" stroke="none" />
-                            </div>
-                            <p className="quote">"Niche Tech is always available to help. Incredibly focused, efficient, and trustworthy when dealing with visa and job seeking needs."</p>
-                            <div className="author">
-                                <span className="author-name">Kiara Tims</span>
-                            </div>
-                        </div>
-
-                        {/* 4. Quote Card */}
-                        <div className="testi-card quote-only-card">
-                            <div className="quote-icon">“</div>
-                            <p className="quote-text">"The OJT program was a game changer. I went from theoretical knowledge to practical application in weeks."</p>
-                            <Link to="/stories" className="text-link">Watch Stories</Link>
-                        </div>
-
-                        {/* 5. Portrait Card (Lana) */}
-                        <div className="testi-card portrait-card portrait-2">
-                            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Lana" className="testi-img" />
-                            <div className="testi-overlay">
-                                <div className="testi-info">
-                                    <h4>Lana Takahashi</h4>
-                                    <div className="stars-mini">★★★★★</div>
-                                </div>
-                                <button className="play-btn"><Play size={16} fill="#FFF" /></button>
-                            </div>
-                        </div>
-
-                        {/* 6. Happy Clients Card */}
-                        <div className="testi-card clients-card">
-                            <h3>Happy Clients</h3>
-                            <p>ETHICS, INNOVATION, AND DEDICATION</p>
-                            <ArrowRight size={24} color="#FFF" />
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* CTA Form Section */}
-            <section className="cta-form-section">
-                <div className="container form-container">
-                    <div className="cta-left">
-                        <h2 className="cta-heading"><span style={{ fontSize: '1.5em' }}>🚀</span> START NOW!</h2>
-                        <h3 className="cta-subheading">Let's Get Your Career Moving</h3>
-                        <div className="contact-info">
-                            <p><Mail size={16} /> support@nichetech.com</p>
-                            <p><Phone size={16} /> +1 (555) 123-4567</p>
-                        </div>
-                    </div>
-
-                    <div className="cta-right">
-                        <form className="quick-form">
-                            <div className="form-row">
-                                <input type="text" placeholder="Name *" className="form-input" />
-                                <input type="text" placeholder="Phone +1 *" className="form-input" />
-                            </div>
-                            <input type="email" placeholder="Email *" className="form-input" />
-                            <button type="button" className="submit-btn">SUBMIT REQUEST</button>
-                        </form>
-                    </div>
+            <section className="bg-black py-20 border-t border-gray-900">
+                <div className="container mx-auto px-6">
+                    <img
+                        src="/group-cta.png"
+                        alt="Ready to Take the Next Step?"
+                        className="w-full h-auto object-contain"
+                    />
                 </div>
             </section>
         </div>

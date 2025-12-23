@@ -1,0 +1,90 @@
+.edtech-hero {
+    padding-bottom: 40px;
+}
+
+.warning-box {
+    background: rgba(239, 68, 68, 0.1);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    padding: 15px 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #fca5a5;
+    font-size: 0.95rem;
+}
+
+.warning-icon {
+    flex-shrink: 0;
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.custom-list {
+    padding-left: 20px;
+    color: var(--color-text-muted);
+}
+
+.custom-list li {
+    margin-bottom: 10px;
+    list-style-type: disc;
+}
+
+.feature-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.sticky-card {
+    position: sticky;
+    top: 100px;
+}
+
+.divider {
+    border: 0;
+    height: 1px;
+    background: var(--color-border);
+    margin: 15px 0;
+}
+
+.sidebar-list {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-list li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-list li::before {
+    content: '✓';
+    color: var(--color-primary);
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.text-small {
+    font-size: 0.85rem;
+}
+
+@media (max-width: 900px) {
+    .details-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -2,17 +2,15 @@
   /* Color Palette - New Dark/Yellow Design */
   --primary-dark: #0B1120;
   /* Deep Navy/Black */
-  --primary-yellow: #FFD700;
-  /* Vibrant Yellow */
-  --accent-purple: #6D28D9;
-  /* Deep Purple */
-  --accent-pink: #EC4899;
-  /* Pink for gradients */
-  --text-main: #1F2937;
-  --text-light: #6B7280;
+  --primary-yellow: #CFF53E;
+  /* Acid Green/Yellow as seen in design */
+  --primary-purple: #8B5CF6;
+  /* Vibrant Purple */
+  --text-main: #FFFFFF;
+  --text-light: #9CA3AF;
   --text-white: #FFFFFF;
-  --bg-light: #F9FAFB;
   --bg-dark: #0B1120;
+  --bg-card: #1F2937;
 
   /* Typography */
   --font-family: 'Inter', sans-serif;
@@ -30,8 +28,8 @@
 
 body {
   font-family: var(--font-family);
-  background-color: var(--text-white);
-  color: var(--text-main);
+  background-color: var(--primary-dark);
+  color: var(--text-white);
   line-height: 1.5;
 }
 

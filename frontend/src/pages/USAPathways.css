@@ -1,0 +1,85 @@
+.usa-hero {
+    background: radial-gradient(circle at center, rgba(99, 102, 241, 0.15), transparent 50%);
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.visa-card {
+    transition: transform 0.3s;
+}
+
+.visa-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-primary);
+}
+
+.visa-card h3 {
+    color: var(--color-primary);
+    margin-bottom: 10px;
+}
+
+.text-muted {
+    color: var(--color-text-muted);
+}
+
+.bg-darker {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.benefit-item {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 12px;
+}
+
+.icon-highlight {
+    color: var(--color-secondary);
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+}
+
+.decision-factors ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    list-style: none;
+}
+
+.decision-factors li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.1rem;
+}
+
+.cta-box {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+}
