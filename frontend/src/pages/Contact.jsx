@@ -30,29 +30,29 @@ const Contact = () => {
             </section>
 
             {/* Who Should Contact Us Section */}
-            <section className="bg-white py-0">
+            <section className="bg-black py-0">
                 <div className="flex flex-col lg:flex-row">
                     {/* Left: Content */}
-                    <div className="lg:w-1/2 p-20 lg:p-24 bg-white text-black flex items-center">
+                    <div className="lg:w-1/2 p-20 lg:p-24 bg-black text-white flex items-center">
                         <div className="max-w-xl">
-                            <h2 className="text-4xl md:text-5xl font-light mb-12">
-                                Who Should <span className="font-bold">Contact Us</span>
-                            </h2>
+                            {/* Decorative Line */}
+                            <div className="h-px w-full bg-gray-800 mb-12"></div>
+
                             <div className="space-y-12">
                                 <div>
-                                    <h3 className="text-xl font-bold mb-2">Anyone planning to move to the USA</h3>
-                                    <div className="h-px w-20 bg-gray-200 mt-4"></div>
+                                    <h3 className="text-2xl font-medium mb-4 leading-normal">Anyone planning to move to the USA</h3>
+                                    <div className="h-px w-full bg-gray-800"></div>
                                 </div>
                                 <div>
-                                    <h3 className="text-xl font-light text-gray-600">Freshers struggling to get hired</h3>
-                                    <div className="h-px w-full bg-gray-100 mt-4"></div>
+                                    <h3 className="text-2xl font-light text-gray-400">Freshers struggling to get hired</h3>
+                                    <div className="h-px w-full bg-gray-900 mt-4"></div>
                                 </div>
                                 <div>
-                                    <h3 className="text-xl font-light text-gray-600">Professionals stuck due to visa or experience gaps</h3>
-                                    <div className="h-px w-full bg-gray-100 mt-4"></div>
+                                    <h3 className="text-2xl font-light text-gray-400">Professionals stuck due to visa or experience gaps</h3>
+                                    <div className="h-px w-full bg-gray-900 mt-4"></div>
                                 </div>
                                 <div>
-                                    <h3 className="text-xl font-light text-gray-600">Career switchers looking for structured growth</h3>
+                                    <h3 className="text-2xl font-light text-gray-400">Career switchers looking for structured growth</h3>
                                 </div>
                             </div>
                         </div>
@@ -62,9 +62,9 @@ const Contact = () => {
                         <img
                             src="/contact-graph.png"
                             alt="Growth Chart"
-                            className="w-full h-full object-cover opacity-80"
+                            className="w-full h-full object-cover opacity-90"
                         />
-                        <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-transparent pointer-events-none lg:hidden"></div>
+                        <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-transparent"></div>
                     </div>
                 </div>
             </section>
