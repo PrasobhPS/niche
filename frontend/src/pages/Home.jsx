@@ -3,8 +3,16 @@ import { Link } from 'react-router-dom';
 
 const Home = () => {
     return (
-        <div className="flex flex-col">
-            <section className="relative bg-brand-dark min-h-screen pt-32 pb-20 overflow-hidden flex flex-col">
+        <div className="flex flex-col max-w-[1440px] mx-auto w-full bg-white relative">
+            <section className="relative bg-brand-dark overflow-hidden flex flex-col rounded-[50px] mx-auto"
+                style={{
+                    width: '1360px',
+                    height: '1276px',
+                    marginTop: '135px',
+                    marginLeft: '40px',
+                    marginRight: 'auto'
+                }}
+            >
                 <div className="absolute top-0 left-0 w-full h-full bg-hero-glow pointer-events-none"></div>
                 <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-purple-900/20 blur-[100px] rounded-full pointer-events-none"></div>
                 <div className="container mx-auto px-6 relative z-10 flex-grow flex flex-col">
