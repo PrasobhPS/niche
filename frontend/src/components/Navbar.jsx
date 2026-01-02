@@ -15,7 +15,7 @@ const Navbar = () => {
     ];
 
     return (
-        <header className="absolute top-0 left-0 right-0 z-50 py-6">
+        <header className="absolute top-0 left-0 right-0 z-50 py-6 bg-white shadow-sm">
             <div className="container mx-auto px-6 flex items-center justify-between">
                 <div className="flex items-center gap-2">
                     <img src="/logo.png" alt="Niche Tech Career" className="h-10 w-auto" />
@@ -27,7 +27,7 @@ const Navbar = () => {
                         <Link
                             key={link.name}
                             to={link.path}
-                            className={`text-white hover:text-gray-300 text-sm font-medium transition-colors border-b border-transparent pb-1 ${location.pathname === link.path ? 'border-purple-500' : 'hover:border-purple-500'}`}
+                            className={`text-brand-dark hover:text-purple-600 text-sm font-medium transition-colors border-b border-transparent pb-1 ${location.pathname === link.path ? 'border-purple-500' : 'hover:border-purple-500'}`}
                         >
                             {link.name}
                         </Link>
@@ -43,7 +43,7 @@ const Navbar = () => {
 
                 {/* Mobile Toggle */}
                 <button
-                    className="md:hidden text-white"
+                    className="md:hidden text-brand-dark"
                     onClick={() => setIsOpen(!isOpen)}
                 >
                     {isOpen ? <X size={28} /> : <Menu size={28} />}
@@ -51,12 +51,12 @@ const Navbar = () => {
 
                 {/* Mobile Menu Overlay */}
                 {isOpen && (
-                    <div className="absolute top-20 left-0 w-full bg-brand-dark border-t border-gray-800 p-6 md:hidden flex flex-col gap-4">
+                    <div className="absolute top-20 left-0 w-full bg-white border-t border-gray-100 p-6 md:hidden flex flex-col gap-4 shadow-xl">
                         {navLinks.map((link) => (
                             <Link
                                 key={link.name}
                                 to={link.path}
-                                className="text-white text-lg py-2 border-b border-gray-800"
+                                className="text-brand-dark text-lg py-2 border-b border-gray-100"
                                 onClick={() => setIsOpen(false)}
                             >
                                 {link.name}
