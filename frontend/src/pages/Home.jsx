@@ -8,7 +8,7 @@ const Home = () => {
                 style={{
                     width: '1360px',
                     height: '1276px',
-                    marginTop: '135px',
+                    marginTop: '100px',
                     marginLeft: '40px',
                     marginRight: 'auto'
                 }}
