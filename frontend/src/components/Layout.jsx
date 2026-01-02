@@ -11,7 +11,7 @@ const Layout = ({ children }) => {
     }, [pathname]);
 
     return (
-        <div className="flex flex-col min-h-screen bg-white text-brand-dark font-sans antialiased">
+        <div className="flex flex-col min-h-screen bg-[#f8f8f8] text-brand-dark font-sans antialiased overflow-x-hidden">
             <Navbar />
             <main className="flex-1">
                 {children}

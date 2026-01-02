@@ -121,40 +121,7 @@ const Contact = () => {
                 </div>
             </section>
 
-            {/* Footer CTA */}
-            <section className="bg-black py-24 md:py-32 text-center px-6 text-white border-t border-gray-900">
-                <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between">
-                    <div className="text-left mb-8 md:mb-0">
-                        <h2 className="text-3xl md:text-5xl font-light mb-2">
-                            Ready to Take <span className="font-bold">the Next Step?</span>
-                        </h2>
-                        <p className="text-gray-400 text-sm max-w-xl mt-4 leading-relaxed">
-                            Niche Tech Career helps individuals build real careers, either by moving to the USA legally or by starting strong through a performance-based On-Job Trainee (OJT) program.
-                        </p>
-                    </div>
-                    <div>
-                        <Link to="/contact" className="inline-block border border-purple-500/50 text-white px-10 py-3 text-xs font-bold tracking-[0.2em] hover:bg-purple-900/20 transition-all uppercase">
-                            Start Now
-                        </Link>
-                    </div>
-                </div>
-
-                {/* Bottom Links */}
-                <div className="max-w-6xl mx-auto mt-24 border-t border-gray-900 pt-12 flex flex-col md:flex-row justify-between items-start md:items-center text-xs text-gray-500">
-                    <div className="mb-8 md:mb-0 text-left">
-                        <h4 className="text-white font-bold mb-4 uppercase tracking-wider">Contact Us</h4>
-                        <p className="hover:text-white transition-colors cursor-pointer">Correia@nichetechcareer.com</p>
-                    </div>
-                    <div className="text-left md:text-right">
-                        <h4 className="text-white font-bold mb-4 uppercase tracking-wider">Connect</h4>
-                        <div className="flex gap-6">
-                            <a href="#" className="hover:text-white transition-colors border-b border-transparent hover:border-white pb-1">Instagram</a>
-                            <a href="#" className="hover:text-white transition-colors border-b border-transparent hover:border-white pb-1">Youtube</a>
-                            <a href="#" className="hover:text-white transition-colors border-b border-transparent hover:border-white pb-1">Facebook</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            {/* Footer space handled by Layout/Footer */}
         </div>
     );
 };
