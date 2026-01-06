@@ -136,30 +136,6 @@ const Contact = () => {
                 </div>
             </section>
 
-            {/* Ready to Take the Next Step Section */}
-            <section className="bg-black py-20 border-t border-gray-900">
-                <div className="container mx-auto px-6 max-w-7xl">
-                    <div className="flex flex-col md:flex-row justify-between items-center bg-black">
-                        <div className="mb-8 md:mb-0 max-w-2xl">
-                            <h2 className="text-4xl md:text-5xl font-light text-white mb-6">
-                                Ready to Take <span className="font-medium text-white">the Next Step?</span>
-                            </h2>
-                            <p className="text-gray-400 text-sm md:text-base leading-relaxed max-w-xl">
-                                Niche Tech Career helps individuals build real careers, either by moving to the USA legally or by starting strong through a performance-based on-job trainee (OJT) program.
-                            </p>
-                        </div>
-                        <div>
-                            <div className="border border-white/30 rounded p-1">
-                                <button className="bg-transparent hover:bg-white/10 text-white text-sm px-8 py-3 uppercase tracking-widest transition-colors border border-white/20">
-                                    Start Now
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* Footer space handled by Layout/Footer */}
         </div >
     );
 };
